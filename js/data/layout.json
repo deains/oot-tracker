@@ -1,0 +1,428 @@
+{
+	"default": {
+		"size": [25, 17],
+		"nodes": [
+			{
+				"areaName": "Bottom of the Well",
+				"nodeClass": "botw",
+				"coords": [15, 10],
+				"labelClass": "pos-e"
+			},
+			{
+				"areaName": "Death Mountain Crater",
+				"nodeClass": "dmc",
+				"coords": [20, 4],
+				"labelClass": "pos-e long"
+			},
+			{
+				"areaName": "Death Mountain Trail",
+				"nodeClass": "dmt",
+				"coords": [17, 5],
+				"labelClass": "pos-s"
+			},
+			{
+				"areaName": "Deku Tree",
+				"nodeClass": "deku",
+				"coords": [17, 16],
+				"labelClass": "pos-e"
+			},
+			{
+				"areaName": "Desert Colossus",
+				"nodeClass": "dc",
+				"coords": [2, 7],
+				"labelClass": "pos-e"
+			},
+			{
+				"areaName": "Dodongo's Cavern",
+				"nodeClass": "dodongo",
+				"coords": [16, 3],
+				"labelClass": "pos-n"
+			},
+			{
+				"areaName": "Fire Temple",
+				"nodeClass": "fire",
+				"coords": [20, 2],
+				"labelClass": "pos-e"
+			},
+			{
+				"areaName": "Forest Temple",
+				"nodeClass": "forest",
+				"coords": [21, 14],
+				"labelClass": "pos-s"
+			},
+			{
+				"areaName": "Ganon's Castle",
+				"nodeClass": "gc",
+				"coords": [12, 2],
+				"labelClass": "pos-e"
+			},
+			{
+				"areaName": "Gerudo Fortress",
+				"nodeClass": "gf",
+				"coords": [5, 9],
+				"labelClass": "pos-s"
+			},
+			{
+				"areaName": "Gerudo Training Grounds",
+				"nodeClass": "gtg",
+				"coords": [5, 7],
+				"labelClass": "pos-e long"
+			},
+			{
+				"areaName": "Gerudo Valley",
+				"nodeClass": "gv",
+				"coords": [8, 9],
+				"labelClass": "pos-s"
+			},
+			{
+				"areaName": "Goron City",
+				"nodeClass": "goron",
+				"coords": [20, 6],
+				"labelClass": "pos-e"
+			},
+			{
+				"areaName": "Graveyard",
+				"nodeClass": "gy",
+				"coords": [17, 8],
+				"labelClass": "pos-n"
+			},
+			{
+				"areaName": "Haunted Wasteland",
+				"nodeClass": "hw",
+				"coords": [3, 9],
+				"labelClass": "pos-sw"
+			},
+			{
+				"areaName": "Hyrule Castle",
+				"nodeClass": "hc",
+				"coords": [9, 4],
+				"labelClass": "pos-s"
+			},
+			{
+				"areaName": "Hyrule Field",
+				"nodeClass": "hf",
+				"coords": [11, 9],
+				"labelClass": "pos-nw"
+			},
+			{
+				"areaName": "Ice Cavern",
+				"nodeClass": "ice",
+				"coords": [24, 8],
+				"labelClass": "pos-n"
+			},
+			{
+				"areaName": "Jabu Jabu's Belly",
+				"nodeClass": "jabu",
+				"coords": [24, 12],
+				"labelClass": "pos-s"
+			},
+			{
+				"areaName": "Kakariko Village",
+				"nodeClass": "kak",
+				"coords": [15, 9],
+				"labelClass": "pos-nw"
+			},
+			{
+				"areaName": "Kokiri Forest",
+				"nodeClass": "kokiri",
+				"coords": [15, 15],
+				"labelClass": "pos-sw"
+			},
+			{
+				"areaName": "Lake Hylia",
+				"nodeClass": "lake",
+				"coords": [9, 13],
+				"labelClass": "pos-w"
+			},
+			{
+				"areaName": "Lon Lon Ranch",
+				"nodeClass": "lonlon",
+				"coords": [12, 10],
+				"labelClass": "pos-s"
+			},
+			{
+				"areaName": "Lost Woods",
+				"nodeClass": "lw",
+				"coords": [17, 14],
+				"labelClass": "pos-s"
+			},
+			{
+				"areaName": "Market",
+				"nodeClass": "market",
+				"coords": [11, 7],
+				"labelClass": "pos-w short"
+			},
+			{
+				"areaName": "Outside Ganon's Castle",
+				"nodeClass": "ogc",
+				"coords": [12, 4],
+				"labelClass": "pos-e long"
+			},
+			{
+				"areaName": "Sacred Forest Meadow",
+				"nodeClass": "sfm",
+				"coords": [19, 14],
+				"labelClass": "pos-n"
+			},
+			{
+				"areaName": "Shadow Temple",
+				"nodeClass": "shadow",
+				"coords": [20, 8],
+				"labelClass": "pos-n"
+			},
+			{
+				"areaName": "Spirit Temple",
+				"nodeClass": "spirit",
+				"coords": [2, 5],
+				"labelClass": "pos-n"
+			},
+			{
+				"areaName": "Temple of Time",
+				"nodeClass": "tot",
+				"coords": [12, 6],
+				"labelClass": "pos-e"
+			},
+			{
+				"areaName": "Water Temple",
+				"nodeClass": "water",
+				"coords": [9, 15],
+				"labelClass": "pos-w"
+			},
+			{
+				"areaName": "Zora's Domain",
+				"nodeClass": "zd",
+				"coords": [20, 11],
+				"labelClass": "pos-nw"
+			},
+			{
+				"areaName": "Zora's Fountain",
+				"nodeClass": "zf",
+				"coords": [23, 10],
+				"labelClass": "pos-nw"
+			},
+			{
+				"areaName": "Zora's River",
+				"nodeClass": "zr",
+				"coords": [17, 12],
+				"labelClass": "pos-n"
+			}
+		],
+		"lines": [
+			{
+				"id": "Market & Castle",
+				"color": "grey",
+				"segments": [
+					{
+						"id": "hf2mk",
+						"class": "vertical",
+						"coords": [[21, 14], [23, 18]]
+					},
+					{
+						"id": "mk2tot",
+						"class": "curve-bottom-right tight",
+						"coords": [[22, 12], [24, 14]]
+					},
+					{
+						"id": "mk2hc",
+						"class": "curve-top-right",
+						"coords": [[18, 8], [22, 14]],
+						"extra": {"marginRight": "0"}
+					}
+				]
+			},
+			{
+				"id": "The Drain",
+				"color": "yellowgreen",
+				"segments": [
+					{
+						"id": "hf2ll",
+						"class": "curve-bottom-left tight",
+						"coords": [[22, 18], [24, 20]],
+						"extra": {"marginLeft": "0"}
+					}
+				]
+			},
+			{
+				"id": "Lakeadilly",
+				"color": "darkblue",
+				"segments": [
+					{
+						"id": "hf2lh",
+						"class": "curve-top-left",
+						"coords": [[18, 18], [22, 26]],
+						"extra": {"marginTop": "2px"}
+					},
+					{
+						"id": "lh2water",
+						"class": "vertical",
+						"coords": [[17, 26], [19, 30]]
+					}
+				]
+			},
+			{
+				"id": "Ganorthern",
+				"color": "black",
+				"segments": [
+					{
+						"id": "mk2ogc",
+						"class": "curve-top-left tight",
+						"coords": [[22, 8], [24, 14]],
+						"extra": {"marginLeft": "0"}
+					},
+					{
+						"id": "ogc2gc",
+						"class": "vertical",
+						"coords": [[23, 4], [25, 8]]
+					}
+				]
+			},
+			{
+				"id": "Kakopolitan",
+				"color": "purple",
+				"segments": [
+					{
+						"id": "hf2kak",
+						"class": "horizontal",
+						"coords": [[22, 17], [30, 19]]
+					},
+					{
+						"id": "kak2gy",
+						"class": "curve-bottom-right tight",
+						"coords": [[30, 16], [34, 18]]
+					},
+					{
+						"id": "kak2botw",
+						"class": "vertical",
+						"coords": [[29, 18], [31, 20]]
+					},
+					{
+						"id": "gy2shdw",
+						"class": "horizontal",
+						"coords": [[34, 15], [40, 17]]
+					}
+				]
+			},
+			{
+				"id": "Lost's Toaster",
+				"color": "darkred",
+				"segments": [
+					{
+						"id": "kak2dmt",
+						"class": "curve-top-left",
+						"coords": [[30, 10], [34, 18]]
+					},
+					{
+						"id": "dmt2dongo",
+						"class": "curve-top-right",
+						"coords": [[32, 6], [34, 10]]
+					},
+					{
+						"id": "dmt2dmc",
+						"class": "curve-bottom-right tight",
+						"coords": [[34, 8], [40, 10]]
+					},
+					{
+						"id": "dmt2goron",
+						"class": "curve-top-right tight",
+						"coords": [[34, 10], [40, 12]]
+					},
+					{
+						"id": "goron2dmc",
+						"class": "vertical",
+						"coords": [[39, 8], [41, 12]]
+					},
+					{
+						"id": "dmc2fire",
+						"class": "vertical",
+						"coords": [[39, 4], [41, 8]]
+					}
+				]
+			},
+			{
+				"id": "Jubitree",
+				"color": "darkgreen",
+				"segments": [
+					{
+						"id": "hf2kok",
+						"class": "curve-bottom-left",
+						"coords": [[22, 18], [30, 30]],
+						"extra": {"marginLeft": "-4px"}
+					},
+					{
+						"id": "kok2deku",
+						"class": "curve-bottom-left",
+						"coords": [[30, 30], [34, 32]]
+					},
+					{
+						"id": "kok2lw",
+						"class": "curve-top-left",
+						"coords": [[30, 28], [34, 30]]
+					},
+					{
+						"id": "lw2frst",
+						"class": "horizontal",
+						"coords": [[34, 27], [42, 29]]
+					}
+				]
+			},
+			{
+				"id": "Rutoria",
+				"color": "steelblue",
+				"segments": [
+					{
+						"id": "hf2zr1",
+						"class": "curve-top-right",
+						"coords": [[22, 18], [28, 22]],
+						"extra": {"marginTop": "2px"}
+					},
+					{
+						"id": "hf2zr2",
+						"class": "curve-bottom-left",
+						"coords": [[28, 22], [34, 24]]
+					},
+					{
+						"id": "zr2zd",
+						"class": "curve-bottom-right",
+						"coords": [[34, 22], [40, 24]]
+					},
+					{
+						"id": "zd2zf",
+						"class": "curve-top-left",
+						"coords": [[40, 20], [46, 22]]
+					},
+					{
+						"id": "zf2ice",
+						"class": "curve-top-left",
+						"coords": [[46, 16], [48, 20]]
+					},
+					{
+						"id": "zf2jabu",
+						"class": "curve-bottom-left",
+						"coords": [[46, 20], [48, 24]]
+					}
+				]
+			},
+			{
+				"id": "Gerudoloo",
+				"color": "sandybrown",
+				"segments": [
+					{
+						"id": "hf2hw",
+						"class": "horizontal",
+						"coords": [[6, 17], [22, 19]]
+					},
+					{
+						"id": "gf2gtg",
+						"class": "vertical",
+						"coords": [[9, 14], [11, 18]]
+					},
+					{
+						"id": "hw2spi",
+						"class": "curve-bottom-left",
+						"coords": [[4, 10], [6, 18]]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,255 @@
+{
+	"Bottom of the Well": {
+		"name": "Bottom of the Well",
+		"class": "botw",
+		"type": "dungeon",
+		"keys": {"small": 3, "big": 0},
+		"mqKeys": {"small": 2, "big": 0},
+		"mapcompass": true,
+		"label": "e"
+	},
+	"Death Mountain Crater": {
+		"name": "Death Mountain Crater",
+		"class": "dmc",
+		"type": "overworld",
+		"label": "e long"
+	},
+	"Death Mountain Trail": {
+		"name": "Death Mountain Trail",
+		"class": "dmt",
+		"type": "overworld",
+		"label": "s"
+	},
+	"Deku Tree": {
+		"name": "Deku Tree",
+		"class": "deku",
+		"type": "dungeon",
+		"keys": {"small": 0, "big": 0},
+		"mqKeys": {"small": 0, "big": 0},
+		"mapcompass": true,
+		"label": "e"
+	},
+	"Desert Colossus": {
+		"name": "Desert Colossus",
+		"class": "dc",
+		"type": "overworld",
+		"label": "e"
+	},
+	"Dodongo's Cavern": {
+		"name": "Dodongo's Cavern",
+		"class": "dodongo",
+		"type": "dungeon",
+		"keys": {"small": 0, "big": 0},
+		"mqKeys": {"small": 0, "big": 0},
+		"mapcompass": true,
+		"label": "n"
+	},
+	"Fire Temple": {
+		"name": "Fire Temple",
+		"class": "fire",
+		"type": "dungeon",
+		"keys": {"small": 8, "big": 1},
+		"mqKeys": {"small": 5, "big": 1},
+		"mapcompass": true,
+		"label": "e"
+	},
+	"Forest Temple": {
+		"name": "Forest Temple",
+		"class": "forest",
+		"type": "dungeon",
+		"keys": {"small": 5, "big": 1},
+		"mqKeys": {"small": 6, "big": 1},
+		"mapcompass": true,
+		"label": "s"
+	},
+	"Ganon's Castle": {
+		"name": "Ganon's Castle",
+		"class": "gc",
+		"type": "dungeon",
+		"keys": {"small": 2, "big": 1},
+		"mqKeys": {"small": 3, "big": 1},
+		"mapcompass": false,
+		"label": "e"
+	},
+	"Generic Grotto": {
+		"name": "Generic Grotto",
+		"class": "",
+		"type": "notused",
+		"label": ""
+	},
+	"Gerudo Fortress": {
+		"name": "Gerudo Fortress",
+		"class": "gf",
+		"type": "overworld",
+		"keys": {"small": 4, "big": 0},
+		"label": "s"
+	},
+	"Gerudo Training Grounds": {
+		"name": "Gerudo Training Grounds",
+		"class": "gtg",
+		"type": "dungeon",
+		"keys": {"small": 9, "big": 0},
+		"mqKeys": {"small": 3, "big": 0},
+		"mapcompass": false,
+		"label": "e long"
+	},
+	"Gerudo Valley": {
+		"name": "Gerudo Valley",
+		"class": "gv",
+		"type": "overworld",
+		"label": "s"
+	},
+	"Goron City": {
+		"name": "Goron City",
+		"class": "goron",
+		"type": "overworld",
+		"label": "e"
+	},
+	"Graveyard": {
+		"name": "Graveyard",
+		"class": "gy",
+		"type": "overworld",
+		"label": "se"
+	},
+	"Haunted Wasteland": {
+		"name": "Haunted Wasteland",
+		"class": "hw",
+		"type": "overworld",
+		"label": "sw"
+	},
+	"Hyrule Castle": {
+		"name": "Hyrule Castle",
+		"class": "hc",
+		"type": "overworld",
+		"label": "s"
+	},
+	"Hyrule Field": {
+		"name": "Hyrule Field",
+		"class": "hf",
+		"type": "overworld",
+		"label": "nw"
+	},
+	"Ice Cavern": {
+		"name": "Ice Cavern",
+		"class": "ice",
+		"type": "dungeon",
+		"keys": {"small": 0, "big": 0},
+		"mqKeys": {"small": 0, "big": 0},
+		"mapcompass": true,
+		"label": "n"
+	},
+	"Jabu Jabu's Belly": {
+		"name": "Jabu Jabu's Belly",
+		"class": "jabu",
+		"type": "dungeon",
+		"keys": {"small": 0, "big": 0},
+		"mqKeys": {"small": 0, "big": 0},
+		"mapcompass": true,
+		"label": "s"
+	},
+	"Kakariko Village": {
+		"name": "Kakariko Village",
+		"class": "kak",
+		"type": "overworld",
+		"label": "nw"
+	},
+	"Kokiri Forest": {
+		"name": "Kokiri Forest",
+		"class": "kokiri",
+		"type": "overworld",
+		"label": "sw"
+	},
+	"Lake Hylia": {
+		"name": "Lake Hylia",
+		"class": "lake",
+		"type": "overworld",
+		"label": "w"
+	},
+	"Link's Pocket": {
+		"name": "Link's Pocket",
+		"class": "",
+		"type": "notused",
+		"label": ""
+	},
+	"Lon Lon Ranch": {
+		"name": "Lon Lon Ranch",
+		"class": "lonlon",
+		"type": "overworld",
+		"label": "s"
+	},
+	"Lost Woods": {
+		"name": "Lost Woods",
+		"class": "lw",
+		"type": "overworld",
+		"label": "s"
+	},
+	"Market": {
+		"name": "Market",
+		"class": "market",
+		"type": "overworld",
+		"label": "w short"
+	},
+	"Outside Ganon's Castle": {
+		"name": "Outside Ganon's Castle",
+		"class": "ogc",
+		"type": "overworld",
+		"label": "e long"
+	},
+	"Sacred Forest Meadow": {
+		"name": "Sacred Forest Meadow",
+		"class": "sfm",
+		"type": "overworld",
+		"label": "n"
+	},
+	"Shadow Temple": {
+		"name": "Shadow Temple",
+		"class": "shadow",
+		"type": "dungeon",
+		"keys": {"small": 5, "big": 1},
+		"mqKeys": {"small": 6, "big": 1},
+		"mapcompass": true,
+		"label": "e"
+	},
+	"Spirit Temple": {
+		"name": "Spirit Temple",
+		"class": "spirit",
+		"type": "dungeon",
+		"keys": {"small": 5, "big": 1},
+		"mqKeys": {"small": 7, "big": 1},
+		"mapcompass": true,
+		"label": "n"
+	},
+	"Temple of Time": {
+		"name": "Temple of Time",
+		"class": "tot",
+		"type": "overworld",
+		"label": "e"
+	},
+	"Water Temple": {
+		"name": "Water Temple",
+		"class": "water",
+		"type": "dungeon",
+		"keys": {"small": 6, "big": 1},
+		"mqKeys": {"small": 2, "big": 1},
+		"mapcompass": true,
+		"label": "w"
+	},
+	"Zora's Domain": {
+		"name": "Zora's Domain",
+		"class": "zd",
+		"type": "overworld",
+		"label": "nw"
+	},
+	"Zora's Fountain": {
+		"name": "Zora's Fountain",
+		"class": "zf",
+		"type": "overworld",
+		"label": "e"
+	},
+	"Zora's River": {
+		"name": "Zora's River",
+		"class": "zr",
+		"type": "overworld",
+		"label": "n"
+	}
+}
