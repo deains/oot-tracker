@@ -1,0 +1,546 @@
+/* Page */
+
+body {
+	font-size: 14px;
+	line-height: 1;
+	margin: 0;
+	user-select: none;
+}
+
+body.dark {
+	background-color: #36393f;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+	transition: filter, opacity 0.5s;
+}
+
+.loading-msg {
+	transition: opacity 0.5s;
+	z-index: 10;
+}
+
+.places {
+	display: block;
+	flex-grow: 1;
+	position: relative;
+}
+
+.places > .nodes,
+.places > .lines {
+	display: grid;
+	position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+}
+
+.places > .nodes {
+	font-weight: 500;
+	place-items: center;
+	z-index: 1;
+}
+
+/* Control panel */
+
+.controls {
+	display: flex;
+	position: absolute;
+		bottom: 10px;
+		left: 10px;
+}
+
+.controls > button {
+	border: none;
+	border-radius: 10px;
+	color: #f5f5f5;
+	cursor: pointer;
+	font-family: Roboto, sans-serif;
+	font-weight: 500;
+	line-height: 1;
+	margin-right: 4px;
+	outline: none;
+	padding: 6px 8px;
+	transition: background-color 0.2s;
+	z-index: 2;
+}
+
+.controls > .reset {
+	background-color: #cd5c5c;
+}
+
+.controls > .reset:hover {
+	background-color: #8b0000;
+}
+
+.controls > .open-settings {
+	background-color: #4682b4;
+}
+
+.controls > .open-settings:hover {
+	background-color: #483d8b;
+}
+
+.controls > .open-about {
+	background-color: #3cb371;
+}
+
+.controls > .open-about:hover {
+	background-color: #006400;
+}
+
+.box {
+	background-color: white;
+	border: 4px solid #2c2e35;
+	border-radius: 10px;
+	display: none;
+	opacity: 0;
+	position: absolute;
+		bottom: 39px;
+	z-index: 3;
+	transition: opacity 0.2s;
+}
+
+.dark .box {
+	background-color: #44485b;
+	border-color: #0d1421;
+	color: #dcddde;
+}
+
+.box.open {
+	display: block;
+}
+
+.settings {
+	left: 64px;
+	text-align: center;
+	width: 300px;
+}
+
+.settings ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.settings > ul > li {
+	align-items: center;
+	border-top: 1px solid;
+	display: flex;
+}
+
+.settings > ul > li:first-child {
+	border-top: none;
+}
+
+.settings > ul > li > .title {
+	flex: 0 0 50%;
+}
+
+.settings > ul > li > ul {
+	border-left: 1px solid;
+	display: flex;
+	flex: 1 0 auto;
+}
+
+.settings > ul > li > ul > li {
+	flex: 1 1 0;
+}
+
+.settings > ul > li > ul > li > label {
+	cursor: pointer;
+	display: flex;
+}
+
+.settings > ul > li > ul > li > label > input {
+	display: none;
+}
+
+.settings > ul > li > ul > li > label > span {
+	flex: 1 1 auto;
+	font-weight: 500;
+	padding: 10px 0;
+	transition: background-color 0.2s;
+}
+
+.settings > ul > li > ul > li > label > input:checked + span {
+	background-color: slategrey;
+	color: white;
+}
+
+.settings > ul > li:first-child > ul > li:last-child > label > span {
+	border-radius: 0 5px 0 0;
+}
+
+.settings > ul > li:last-child > ul > li:last-child > label > span {
+	border-radius: 0 0 5px 0;
+}
+
+.about {
+	align-items: center;
+	left: 133px;
+	width: 420px;
+}
+
+.about.open {
+	display: flex;
+}
+
+.about p {
+	margin: 10px;
+	line-height: 1.21;
+}
+
+.about .byline {
+	text-align: center;
+}
+
+.about .byline strong {
+	font-weight: 500;
+}
+
+.about > .shields {
+	display: flex;
+	flex-direction: column;
+}
+
+.about > .shields > a {
+	margin: 10px 10px 0;
+}
+
+.about > .shields > a:first-child {
+	margin-top: 0;
+}
+
+/* Places - Area node */
+
+.area {
+	cursor: pointer;
+	position: relative;
+}
+
+.area > .label {
+	color: #17429d;
+	font-size: 12px;
+	position: absolute;
+}
+
+.dark .area > .label {
+	color: #709cef;
+}
+
+.area.complete > .label {
+	text-decoration: line-through;
+}
+
+.area > .checks {
+	background-color: white;
+	border: 4px solid #2c2e35;
+	border-radius: 100%;
+	color: #2c2e35;
+	font-size: 13px;
+	height: 22px;
+	line-height: 22px;
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	text-align: center;
+	transition: border-radius, transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	width: 22px;
+}
+
+.dark .area > .checks {
+	background-color: #44485b;
+	border-color: #0d1421;
+	color: #dcddde;
+}
+
+.area.active > .checks {
+	border-radius: 30%;
+	transform: rotate(360deg);
+}
+
+.area.complete > .checks {
+	color: #6c6e75;
+}
+
+/* Area node label */
+
+.area > .label.pos-e {
+	left: 18px;
+	top: -12px;
+}
+
+.area > .label.pos-w {
+	text-align: right;
+	right: 19px;
+	top: -12px;
+}
+
+.area > .label.pos-e.short,
+.area > .label.pos-w.short {
+	top: -6px;
+}
+
+.area > .label.pos-e.long,
+.area > .label.pos-w.long {
+	top: -16px;
+}
+
+.area > .label.pos-n {
+	text-align: center;
+	bottom: 18px;
+	left: 0;
+}
+
+.area > .label.pos-s {
+	text-align: center;
+	top: 18px;
+	left: 0;
+}
+
+.area > .label.pos-nw {
+	text-align: right;
+	bottom: 12px;
+	right: 12px;
+}
+
+.area > .label.pos-sw {
+	text-align: right;
+	top: 12px;
+	right: 12px;
+}
+
+.area > .label.pos-ne {
+	bottom: 12px;
+	left: 12px;
+}
+
+.area > .label.pos-se {
+	top: 12px;
+	left: 12px;
+}
+
+/* Places - Lines */
+
+.line.vertical {
+	background-color: currentcolor;
+	place-self: stretch center;
+	width: 4px;
+}
+
+.line.horizontal {
+	background-color: currentcolor;
+	height: 4px;
+	place-self: center stretch;
+}
+
+.line.curve-top-left {
+	border-top: 4px solid;
+	border-left: 4px solid;
+	border-radius: 28px 0 0 0;
+	margin: -2px 0 0 -2px;
+}
+
+.line.curve-top-right {
+	border-top: 4px solid;
+	border-right: 4px solid;
+	border-radius: 0 28px 0 0;
+	margin: -2px -2px 0 0;
+}
+
+.line.curve-bottom-right {
+	border-bottom: 4px solid;
+	border-right: 4px solid;
+	border-radius: 0 0 28px 0;
+	margin: 0 -2px -2px 0;
+}
+
+.line.curve-bottom-left {
+	border-bottom: 4px solid;
+	border-left: 4px solid;
+	border-radius: 0 0 0 28px;
+	margin: 0 0 -2px -2px;
+}
+
+.line.curve-top-left.tight {
+	border-radius: 20px 0 0 0;
+}
+
+.line.curve-top-right.tight {
+	border-radius: 0 20px 0 0;
+}
+
+.line.curve-bottom-right.tight {
+	border-radius: 0 0 20px 0;
+}
+
+.line.curve-bottom-left.tight {
+	border-radius: 0 0 0 20px;
+}
+
+/* Check list */
+
+.list {
+	background: url("../img/areas/Kokiri Forest.png") no-repeat 0 0 / cover;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 300px;
+}
+
+.list > .header {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 80px;
+}
+
+.list > .header > .title,
+.list > .header > .clickers {
+	flex: 0 0 40px;
+}
+
+.list > .header > .title {
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	text-shadow: 0 0 3px black;
+}
+
+.list > .header > .clickers {
+	display: flex;
+	justify-content: space-between;
+}
+
+.list > .header > .clickers > .buttons,
+.list > .header > .clickers > .keys {
+	align-items: center;
+	display: flex;
+}
+
+.list > .header > .clickers > .buttons > div,
+.list > .header > .clickers > .keys > .small,
+.list > .header > .clickers > .keys > .big {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	background: no-repeat 5px 5px / 16px 16px rgba(255, 255, 255, 0.75);
+	border-radius: 14px;
+	cursor: default;
+	padding: 6px;
+}
+
+.list > .header > .clickers > .buttons > div {
+	margin-left: 4px;
+}
+
+.list > .header > .clickers > .keys.hidden {
+	display: none;
+}
+
+.list > .header > .clickers > .keys > .small,
+.list > .header > .clickers > .keys > .big {
+	display: flex;
+	justify-content: space-around;
+	padding-left: 26px;
+	margin-right: 4px;
+	width: 30px;
+}
+
+.list > .header > .clickers > .keys > .small {
+	background-image: url(../img/Key.png);
+}
+
+.list > .header > .clickers > .keys > .big {
+	background-image: url(../img/BossKey.png);
+}
+
+.list > .header > .clickers > .keys > .hidden {
+	display: none;
+}
+
+.list > .header > .clickers > .keys > .complete {
+	color: green;
+}
+
+.list > .checks {
+	flex-grow: 1;
+	list-style: none;
+	margin: 0;
+	overflow: auto;
+	padding: 0;
+}
+
+.list > .checks > li {
+	background-color: rgba(255, 255, 255, 0.75);
+	border: 1px solid;
+	border-radius: 2px;
+	box-shadow: inset 0 0 3px;
+	cursor: default;
+	line-height: 16px;
+	margin: 4px;
+	padding: 8px 8px 8px 32px;
+	position: relative;
+	transition: color, font-style, text-decoration 0.2s;
+}
+
+.list > .checks > li::before {
+	background-size: contain;
+	content: " ";
+	height: 20px;
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 20px;
+}
+
+.list > .checks > .checked {
+	color: green;
+	text-decoration: line-through;
+}
+
+.list > .checks > .barren {
+	color: gray;
+	font-style: italic;
+}
+
+/* Check icons */
+
+.Bean::before { background-image: url(../img/checks/Bean.png) }
+.Biggoron::before { background-image: url(../img/checks/Biggoron.png) }
+.BigPoe::before { background-image: url(../img/checks/BigPoe.png) }
+.BossHeart::before { background-image: url(../img/checks/BossHeart.png) }
+.BottleLetter::before { background-image: url(../img/checks/BottleLetter.png) }
+.ChestBoss::before { background-image: url(../img/checks/ChestBoss.png) }
+.Chest::before { background-image: url(../img/checks/Chest.png) }
+.Cow::before { background-image: url(../img/checks/Cow.png) }
+.Dampe::before { background-image: url(../img/checks/Dampe.png) }
+.Frog::before { background-image: url(../img/checks/Frog.png) }
+.GerudoCard::before { background-image: url(../img/checks/GerudoCard.png) }
+.GossipStone::before { background-image: url(../img/checks/GossipStone.png) }
+.GreatFairy::before { background-image: url(../img/checks/GreatFairy.png) }
+.GSToken::before { background-image: url(../img/checks/GSToken.png) }
+.HeartPiece::before { background-image: url(../img/checks/HeartPiece.png) }
+.Key::before { background-image: url(../img/checks/Key.png) }
+.LACS::before { background-image: url(../img/checks/LACS.png) }
+.MaskOfTruth::before { background-image: url(../img/checks/MaskOfTruth.png) }
+.MedalFire::before { background-image: url(../img/checks/MedalFire.png) }
+.MedalForest::before { background-image: url(../img/checks/MedalForest.png) }
+.MedalShadow::before { background-image: url(../img/checks/MedalShadow.png) }
+.MedalSpirit::before { background-image: url(../img/checks/MedalSpirit.png) }
+.MedalWater::before { background-image: url(../img/checks/MedalWater.png) }
+.NPC::before { background-image: url(../img/checks/NPC.png) }
+.Ocarina1::before { background-image: url(../img/checks/Ocarina1.png) }
+.Ocarina2::before { background-image: url(../img/checks/Ocarina2.png) }
+.Richard::before { background-image: url(../img/checks/Richard.png) }
+.Scrub::before { background-image: url(../img/checks/Scrub.png) }
+.Shop::before { background-image: url(../img/checks/Shop.png) }
+.SkullMask::before { background-image: url(../img/checks/SkullMask.png) }
+.Skulltula::before { background-image: url(../img/checks/Skulltula.png) }
+.Song::before { background-image: url(../img/checks/Song.png) }
+.StoneGoron::before { background-image: url(../img/checks/StoneGoron.png) }
+.StoneKokiri::before { background-image: url(../img/checks/StoneKokiri.png) }
+.StoneZora::before { background-image: url(../img/checks/StoneZora.png) }
+.ZeldaLetter::before { background-image: url(../img/checks/ZeldaLetter.png) }

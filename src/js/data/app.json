@@ -1,0 +1,22 @@
+{
+	"startingArea": "Kokiri Forest",
+	"countExclusions": ["GSToken", "GossipStone"],
+	"layout": "default",
+	"storageKey": "state",
+	"repo": "deains/oot-tracker",
+	"shields": [
+		{
+			"url": "https://github.com/REPO",
+			"img": "https://img.shields.io/badge/github-REPO-informational.svg",
+			"enc": true
+		},
+		{
+			"url": "https://github.com/REPO/blob/master/LICENSE",
+			"img": "https://img.shields.io/github/license/REPO.svg"
+		},
+		{
+			"url": "https://github.com/REPO",
+			"img": "https://img.shields.io/github/last-commit/REPO/gh-pages.svg?label=last%20update"
+		}
+	]
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>OoT location tracker</title>
+		<meta name="description" content="A map-only tracker/checklist for Ocarina of Time">
+
+		<style>
+			body {
+				font-family: Roboto, "Franklin Gothic Medium", Tahoma, sans-serif;
+				-webkit-text-size-adjust: 100%;
+			}
+
+			.container.loading {
+				filter: blur(10px);
+				opacity: 0.5;
+			}
+
+			.container > * {
+				display: none;
+			}
+
+			.loading-msg {
+				align-items: center;
+				color: #b7b468;
+				display: flex;
+				font-size: 24px;
+				font-weight: 500;
+				justify-content: center;
+				position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+			}
+		</style>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+		<link rel="stylesheet" href="css/main.css">
+
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#cdbb32">
+
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="theme-color" content="#ffffff">
+
+		<script data-main="js/main" src="js/lib/require.js" async></script>
+	</head>
+	<body>
+		<div id="loading-msg" class="loading-msg">
+			Getting ready
+		</div>
+		<div id="container" class="container loading">
+			<div id="places" class="places">
+				<div class="nodes"></div>
+				<div class="lines"></div>
+			</div>
+			<div id="list" class="list">
+				<div class="header">
+					<div class="title">Loading…</div>
+					<div class="clickers">
+						<div class="buttons"></div>
+						<div class="keys hidden">
+							<div class="small action-key" data-key="small">
+								<span class="got">0</span>
+								<span class="divider">/</span>
+								<span class="total">0</span>
+							</div>
+							<div class="big action-key" data-key="big">
+								<span class="got">0</span>
+								<span class="divider">/</span>
+								<span class="total">0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="checks"></ul>
+			</div>
+			<div id="controls" class="controls">
+				<button id="reset" type="button" class="reset">Reset</button>
+				<button id="open-settings" type="button" class="open-settings">Settings</button>
+				<button id="open-about" type="button" class="open-about">About</button>
+			</div>
+			<div id="settings" class="settings box">
+				<ul>
+					<li class="template">
+						<span class="title"></span>
+						<ul>
+							<li class="yes">
+								<label>
+									<input type="radio" value="true">
+									<span>Yes</span>
+								</label>
+							</li>
+							<li class="no">
+								<label>
+									<input type="radio" value="false">
+									<span>No</span>
+								</label>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="about" class="about box">
+				<div class="info">
+					<p class="byline">
+						<strong>Ocarina of Time location tracker</strong>
+						<br>
+						by Dyn (deains)
+					</p>
+					<p>For issues, improvements, or suggestions, check out the GitHub repository.
+				</div>
+				<div class="shields"></div>
+			</div>
+		</div>
+	</body>
+</html>

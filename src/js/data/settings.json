@@ -1,0 +1,98 @@
+{
+	"darkmode": {
+		"showInMenu": true,
+		"title": "Dark mode",
+		"change": ["StyleChange"],
+		"default": false
+	},
+	"shopsanity": {
+		"showInMenu": true,
+		"title": "Shopsanity",
+		"change": ["Reload"],
+		"default": false
+	},
+	"scrubsanity": {
+		"showInMenu": true,
+		"title": "Scrubsanity",
+		"change": ["Reload"],
+		"default": false
+	},
+	"cowsanity": {
+		"showInMenu": true,
+		"title": "Cowsanity",
+		"change": ["Reload"],
+		"default": false
+	},
+	"gstoken": {
+		"showInMenu": true,
+		"title": "Skulltula tokens",
+		"change": ["Reload"],
+		"default": true
+	},
+	"gossipstone": {
+		"showInMenu": true,
+		"title": "Gossip stones",
+		"change": ["Reload"],
+		"default": true
+	},
+	"mq.deku": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.dodongo": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.jabu": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.forest": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.fire": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.water": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.spirit": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.shadow": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": true
+	},
+	"mq.botw": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.ice": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.gtg": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	},
+	"mq.gc": {
+		"showInMenu": false,
+		"change": ["Reload"],
+		"default": false
+	}
+}

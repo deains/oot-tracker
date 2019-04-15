@@ -1,0 +1,20 @@
+{
+	"short_name": "OoT location tracker",
+	"name": "OoT tracker",
+	"description": "A map-only tracker/checklist for Ocarina of Time",
+	"lang": "en",
+	"start_url": "/",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "/icon.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+}

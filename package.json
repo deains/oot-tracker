@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "postcss-cli": "^6.1.2",
+    "requirejs": "^2.3.6",
+    "requirejs-json": "0.0.3",
+    "text": "github:requirejs/text"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
