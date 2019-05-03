@@ -107,13 +107,13 @@
 			{
 				"areaName": "Ice Cavern",
 				"nodeClass": "ice",
-				"coords": [24, 8],
+				"coords": [24, 9],
 				"labelClass": "pos-n"
 			},
 			{
 				"areaName": "Jabu Jabu's Belly",
 				"nodeClass": "jabu",
-				"coords": [24, 12],
+				"coords": [24, 11],
 				"labelClass": "pos-s"
 			},
 			{
@@ -392,13 +392,13 @@
 					},
 					{
 						"id": "zf2ice",
-						"class": "curve-top-left",
-						"coords": [[46, 16], [48, 20]]
+						"class": "curve-top-left tight",
+						"coords": [[46, 18], [48, 20]]
 					},
 					{
 						"id": "zf2jabu",
-						"class": "curve-bottom-left",
-						"coords": [[46, 20], [48, 24]]
+						"class": "curve-bottom-left tight",
+						"coords": [[46, 20], [48, 22]]
 					}
 				]
 			},
