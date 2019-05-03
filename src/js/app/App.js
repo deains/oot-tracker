@@ -13,7 +13,6 @@ define([
 	 * @param	{string[]}		config.layout			Layout name to load
 	 * @param	{string}		config.storageKey		Key name for state storage
 	 * @param	{string}		config.startingArea		Which area to load initially
-	 * @param	{string[]}		config.countExclusions	Check type(s) to exclude from the counter on area nodes
 	 * @param	{HTMLElement}	placesElement			Element containing the area list
 	 * @param	{HTMLElement}	listElement				Element containing the current area list
 	 * @param	{Storage}		storage					Storage for importing/exporting state data
@@ -21,7 +20,6 @@ define([
 	 * @constructor
 	 */
 	function App(config, placesElement, listElement, storage) {
-		this.countExclusions = config.countExclusions;
 		this.startingArea = config.startingArea;
 
 		this.events = new Events();
@@ -33,15 +31,6 @@ define([
 
 		this.loadStartingArea();
 	}
-
-	/**
-	 * Return check type(s) excluded from the counter on area nodes
-	 *
-	 * @returns {string[]}
-	 */
-	App.prototype.getCountExclusions = function() {
-		return this.countExclusions;
-	};
 
 	/**
 	 * Reset the tracker

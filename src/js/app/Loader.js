@@ -261,13 +261,31 @@ define([
 	Loader.prototype.updateAreaCount = function(area) {
 		var count = area.getChecks().filter(function(check) {
 			return (
-				this.app.getCountExclusions().indexOf(check.getType()) === -1 &&
+				this.getCountExclusions().indexOf(check.getType()) === -1 &&
 				check.meetsRequirements(this.app.getSettings()) &&
 				!(check.hasState('checked') || check.hasState('barren'))
 			);
 		}, this).length;
 
 		area.setCompletionCount(count);
+	};
+
+	/**
+	 * Determine which check types should be excluded from area counts
+	 *
+	 * @private
+	 *
+	 * @returns	{string[]}
+	 */
+	Loader.prototype.getCountExclusions = function() {
+		var excluded = [];
+		if (!this.app.getSettings().get('count.gstoken')) {
+			excluded.push('GSToken');
+		}
+		if (!this.app.getSettings().get('count.gossipstone')) {
+			excluded.push('GossipStone');
+		}
+		return excluded;
 	};
 
 	return Loader;
