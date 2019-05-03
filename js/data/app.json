@@ -1,6 +1,5 @@
 {
 	"startingArea": "Kokiri Forest",
-	"countExclusions": ["GSToken", "GossipStone"],
 	"layout": "default",
 	"storageKey": "state",
 	"repo": "deains/oot-tracker",

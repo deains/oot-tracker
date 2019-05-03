@@ -29,11 +29,23 @@
 		"change": ["Reload"],
 		"default": true
 	},
+	"count.gstoken": {
+		"showInMenu": true,
+		"title": "Count skulltula tokens",
+		"change": ["Reload"],
+		"default": false
+	},
 	"gossipstone": {
 		"showInMenu": true,
 		"title": "Gossip stones",
 		"change": ["Reload"],
 		"default": true
+	},
+	"count.gossipstone": {
+		"showInMenu": true,
+		"title": "Count gossip stones",
+		"change": ["Reload"],
+		"default": false
 	},
 	"mq.deku": {
 		"showInMenu": false,
@@ -73,7 +85,7 @@
 	"mq.shadow": {
 		"showInMenu": false,
 		"change": ["Reload"],
-		"default": true
+		"default": false
 	},
 	"mq.botw": {
 		"showInMenu": false,
