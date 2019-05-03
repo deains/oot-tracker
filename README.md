@@ -16,7 +16,7 @@ This tracker is also built to have a simple, clean layout that can be used quick
 
 The current version is available on GitHub pages: [OoT tracker](https://deains.github.io/oot-tracker). You can bookmark this as a web app or pin it to your Start menu.
 
-Click on an area node to expand the list of checks. Click on individual checks to mark them as complete, click again (or right click) to unmark them. You can also mark a location as barren/foolish by middle-clicking it.
+Click on an area node to expand the list of checks. Click on individual checks to mark them as complete, click again to unmark them. You can also mark a location as barren/foolish by right-clicking it.
 
 Area nodes will automatically update to show you how many checks remain in that area. Skulltula tokens and gossip stones are not counted.
 
