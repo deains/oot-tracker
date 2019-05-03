@@ -18,16 +18,17 @@ The current version is available on GitHub pages: [OoT tracker](https://deains.g
 
 Click on an area node to expand the list of checks. Click on individual checks to mark them as complete, click again to unmark them. You can also mark a location as barren/foolish by right-clicking it.
 
-Area nodes will automatically update to show you how many checks remain in that area. Skulltula tokens and gossip stones are not counted.
+Area nodes will automatically update to show you how many checks remain in that area. Skulltula tokens and gossip stones are not counted by default.
 
-The Settings button in the bottom right allows you to change how the tracker works and include/exclude certain checks from the lists.
+The Settings button in the bottom right allows you to change how the tracker works and include/exclude certain checks from displaying.
 
-The Reset button in the bottom right will completely reset the tracker back to its default state. Note that reloading the page will not reset the tracker (so you can come back later), only clicking the reset button. Your settings are always saved and will not be lost when resetting.
+The Reset button in the bottom right will completely reset the tracker back to its default state. Note that reloading the page will not reset the tracker (so you can come back later), only clicking the reset button. Your settings are saved separately and will not be lost when resetting.
 
 ### I found a problem, what should I do?
 
 1. Don't panic
-2. Create an issue on GitHub describing what went wrong. Please try and give as much useful information as you can.
+1. Try clearing your site data if the tracker fails to load
+1. If you continue to have problems, create an issue on GitHub describing what went wrong. Please try and give as much useful information as you can.
 
 ### I have a suggestion/want to help, what do I do?
 
