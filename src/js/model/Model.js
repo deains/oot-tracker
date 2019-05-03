@@ -1,5 +1,6 @@
 define([], function() {
 	/**
+	 * Model constructor
 	 *
 	 * @param	{Store}	store
 	 *
@@ -44,6 +45,7 @@ define([], function() {
 		this.getElement().classList.add(state);
 		this.update();
 	};
+
 	/**
 	 * Return all current states of this model
 	 *
