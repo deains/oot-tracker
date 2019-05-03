@@ -85,7 +85,7 @@
 	"mq.shadow": {
 		"showInMenu": false,
 		"change": ["Reload"],
-		"default": true
+		"default": false
 	},
 	"mq.botw": {
 		"showInMenu": false,
