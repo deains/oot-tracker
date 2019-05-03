@@ -126,6 +126,20 @@ define([
 			this.app.getList().changeArea(area);
 		}.bind(this));
 
+		area.getElement().addEventListener('contextmenu', function(event) {
+			area.toggleState('barren');
+			var isBarren = area.hasState('barren');
+			area.getChecks().forEach(function(check) {
+				if (isBarren) {
+					check.addState('barren');
+				} else {
+					check.removeState('barren');
+				}
+			});
+			this.updateAreaCount(area);
+			event.preventDefault();
+		}.bind(this));
+
 		checks.forEach(function(check) {
 			check.setArea(area);
 		}, this);
@@ -164,25 +178,14 @@ define([
 		);
 
 		check.getElement().addEventListener('click', function(event) {
-			switch (event.button) {
-				case 0:
-					check.toggleState('checked');
-					this.updateAreaCount(check.getArea());
-					break;
-				case 1:
-					check.toggleState('barren');
-					this.updateAreaCount(check.getArea());
-					break;
+			if (event.button === 0) {
+				check.toggleState('checked');
+				this.updateAreaCount(check.getArea());
 			}
 		}.bind(this));
 
-		check.getElement().addEventListener('touchend', function() {
-			check.toggleState('checked');
-			this.updateAreaCount(check.getArea());
-		}.bind(this));
-
 		check.getElement().addEventListener('contextmenu', function(event) {
-			check.removeState('checked');
+			check.toggleState('barren');
 			this.updateAreaCount(check.getArea());
 			event.preventDefault();
 		}.bind(this));

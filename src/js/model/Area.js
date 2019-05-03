@@ -215,7 +215,7 @@ define([
 	 * @returns	{string[]}
 	 */
 	Area.prototype.getValidStates = function() {
-		return ['active', 'complete'];
+		return ['active', 'barren', 'complete'];
 	};
 
 	/**
