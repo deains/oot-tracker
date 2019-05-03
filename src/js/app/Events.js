@@ -1,8 +1,19 @@
 define([], function() {
+	/**
+	 * Events constructor
+	 *
+	 * @constructor
+	 */
 	function Events() {
 		this.listeners = {};
 	}
 
+	/**
+	 * Add an event listener
+	 *
+	 * @param	{string}	type
+	 * @param	{function}	callback
+	 */
 	Events.prototype.add = function(type, callback) {
 		if (!(type in this.listeners)) {
 			this.listeners[type] = [];
@@ -11,6 +22,12 @@ define([], function() {
 		this.listeners[type].push(callback);
 	};
 
+	/**
+	 * Remove an event listener
+	 *
+	 * @param	{string}	type
+	 * @param	{function}	callback
+	 */
 	Events.prototype.remove = function(type, callback) {
 		if (!(type in this.listeners)) {
 			return;
@@ -26,6 +43,11 @@ define([], function() {
 		}
 	};
 
+	/**
+	 * Trigger an event
+	 *
+	 * @param	{string}	type
+	 */
 	Events.prototype.trigger = function(type) {
 		if (!(type in this.listeners)) {
 			return;

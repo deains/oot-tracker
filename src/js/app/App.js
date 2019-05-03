@@ -10,6 +10,7 @@ define([
 	 * App constructor
 	 *
 	 * @param	{object}		config					App configuration
+	 * @param	{string[]}		config.layout			Layout name to load
 	 * @param	{string}		config.storageKey		Key name for state storage
 	 * @param	{string}		config.startingArea		Which area to load initially
 	 * @param	{string[]}		config.countExclusions	Check type(s) to exclude from the counter on area nodes

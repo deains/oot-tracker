@@ -152,7 +152,6 @@ define([], function() {
 	 * @private
 	 *
 	 * @param	{number}	count
-	 * @param	{string}	keyType	'small' or 'big'
 	 */
 	List.prototype.setSmallKeyCount = function(count) {
 		var counter = this.element.querySelector('.small');

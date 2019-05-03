@@ -251,6 +251,13 @@ define([
 		}
 	};
 
+	/**
+	 * Update the check count on an area
+	 *
+	 * @private
+	 *
+	 * @param	{Area}	area
+	 */
 	Loader.prototype.updateAreaCount = function(area) {
 		var count = area.getChecks().filter(function(check) {
 			return (

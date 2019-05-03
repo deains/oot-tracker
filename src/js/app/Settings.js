@@ -56,6 +56,11 @@ define([
 		}
 	};
 
+	/**
+	 * Retrun all setting values
+	 *
+	 * @returns	{Array}
+	 */
 	Settings.prototype.all = function() {
 		var settings = [];
 		for (var name in this.data) {
