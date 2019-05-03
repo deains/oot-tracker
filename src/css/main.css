@@ -496,14 +496,14 @@ body.dark {
 	width: 20px;
 }
 
-.list > .checks > .checked {
-	color: green;
-	text-decoration: line-through;
-}
-
 .list > .checks > .barren {
 	color: gray;
 	font-style: italic;
+}
+
+.list > .checks > .checked {
+	color: green;
+	text-decoration: line-through;
 }
 
 /* Check icons */
