@@ -392,17 +392,6 @@ body.dark {
 	flex: 0 0 300px;
 }
 
-.list > .header {
-	display: flex;
-	flex-direction: column;
-	flex: 0 0 80px;
-}
-
-.list > .header > .title,
-.list > .header > .clickers {
-	flex: 0 0 40px;
-}
-
 .list > .header > .title {
 	color: white;
 	font-size: 24px;
@@ -410,60 +399,6 @@ body.dark {
 	line-height: 40px;
 	text-align: center;
 	text-shadow: 0 0 3px black;
-}
-
-.list > .header > .clickers {
-	display: flex;
-	justify-content: space-between;
-}
-
-.list > .header > .clickers > .buttons,
-.list > .header > .clickers > .keys {
-	align-items: center;
-	display: flex;
-}
-
-.list > .header > .clickers > .buttons > div,
-.list > .header > .clickers > .keys > .small,
-.list > .header > .clickers > .keys > .big {
-	border: 1px solid rgba(0, 0, 0, 0.5);
-	background: no-repeat 5px 5px / 16px 16px rgba(255, 255, 255, 0.75);
-	border-radius: 14px;
-	cursor: default;
-	padding: 6px;
-}
-
-.list > .header > .clickers > .buttons > div {
-	margin-left: 4px;
-}
-
-.list > .header > .clickers > .keys.hidden {
-	display: none;
-}
-
-.list > .header > .clickers > .keys > .small,
-.list > .header > .clickers > .keys > .big {
-	display: flex;
-	justify-content: space-around;
-	padding-left: 26px;
-	margin-right: 4px;
-	width: 30px;
-}
-
-.list > .header > .clickers > .keys > .small {
-	background-image: url(../img/Key.png);
-}
-
-.list > .header > .clickers > .keys > .big {
-	background-image: url(../img/BossKey.png);
-}
-
-.list > .header > .clickers > .keys > .hidden {
-	display: none;
-}
-
-.list > .header > .clickers > .keys > .complete {
-	color: green;
 }
 
 .list > .checks {

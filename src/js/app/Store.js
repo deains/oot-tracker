@@ -30,13 +30,6 @@ define([
 			state: model.getState()
 		};
 
-		if (model instanceof Area) {
-			data.keys = {
-				small: model.getSmallKeyCount(),
-				big: model.getBigKeyCount()
-			};
-		}
-
 		this.setSaveItem(this.getModelKey(model), data);
 	};
 
@@ -51,9 +44,6 @@ define([
 		if (data !== null) {
 			if ('state' in data) {
 				model.loadState(data.state);
-			}
-			if ('keys' in data && model instanceof Area) {
-				model.loadKeyCounts(data.keys.small || 0, data.keys.big || 0);
 			}
 		}
 	};

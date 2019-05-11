@@ -97,10 +97,6 @@ define([
 	 * @param	{string}		data.name
 	 * @param	{string}		data.class
 	 * @param	{string}		data.type
-	 * @param	{Object}		data.keys
-	 * @param	{number}		data.keys.small
-	 * @param	{number}		data.keys.big
-	 * @param	{boolean}		data.mapcompass
 	 * @param	{string}		data.label
 	 * @param	{Array<Check>}	checks
 	 *
@@ -114,8 +110,6 @@ define([
 			data.name,
 			data.class,
 			data.type,
-			data.keys,
-			data.mapcompass,
 			data.label,
 			checks
 		);

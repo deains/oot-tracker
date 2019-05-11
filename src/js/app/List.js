@@ -61,36 +61,6 @@ define([], function() {
 	 * @private
 	 */
 	List.prototype.init = function() {
-		this.getElement().querySelectorAll('.action-key').forEach(function(element) {
-			element.addEventListener('click', function(event) {
-				if (event.button === 0) {
-					if (this.getCurrentArea()) {
-						if (element.dataset.key === 'small') {
-							this.getCurrentArea().incrementSmallKeyCount();
-							this.setSmallKeyCount(this.getCurrentArea().getSmallKeyCount());
-						} else {
-							this.getCurrentArea().incrementBigKeyCount();
-							this.setBigKeyCount(this.getCurrentArea().getBigKeyCount());
-						}
-					}
-					event.preventDefault();
-				}
-			}.bind(this));
-
-			element.addEventListener('contextmenu', function(event) {
-				if (this.getCurrentArea()) {
-					if (element.dataset.key === 'small') {
-						this.getCurrentArea().decrementSmallKeyCount();
-						this.setSmallKeyCount(this.getCurrentArea().getSmallKeyCount());
-					} else {
-						this.getCurrentArea().decrementBigKeyCount();
-						this.setBigKeyCount(this.getCurrentArea().getBigKeyCount());
-					}
-				}
-				event.preventDefault();
-			}.bind(this));
-		}, this);
-
 		this.app.getEvents().add('Reload', function() {
 			this.reload();
 		}.bind(this));
@@ -106,22 +76,6 @@ define([], function() {
 	List.prototype.loadArea = function(area) {
 		this.element.querySelector('.header .title').innerHTML = area.getName();
 		this.element.className = 'list '+ area.getClass();
-
-		if (area.hasKeys()) {
-			this.element.querySelector('.header .keys').classList.remove('hidden');
-
-			this.setSmallKeyCount(area.getSmallKeyCount());
-			this.setKeyTotal(area.getSmallKeyTotal(), 'small');
-			this.setBigKeyCount(area.getBigKeyCount());
-			this.setKeyTotal(area.getBigKeyTotal(), 'big');
-
-			this.element.querySelector('.keys .small')
-				.classList[area.getSmallKeyTotal() === 0 ? 'add' : 'remove']('hidden');
-			this.element.querySelector('.keys .big')
-				.classList[area.getBigKeyTotal() === 0 ? 'add' : 'remove']('hidden');
-		} else {
-			this.element.querySelector('.header .keys').classList.add('hidden');
-		}
 		this.loadChecks(area.getChecks());
 	};
 
@@ -144,52 +98,6 @@ define([], function() {
 				ul.appendChild(check.getElement());
 			}
 		}, this);
-	};
-
-	/**
-	 * Set small key count
-	 *
-	 * @private
-	 *
-	 * @param	{number}	count
-	 */
-	List.prototype.setSmallKeyCount = function(count) {
-		var counter = this.element.querySelector('.small');
-		counter.querySelector('.got').innerHTML = count.toString();
-		if (count < this.getCurrentArea().getSmallKeyTotal()) {
-			counter.classList.remove('complete');
-		} else {
-			counter.classList.add('complete');
-		}
-	};
-
-	/**
-	 * Set big key count
-	 *
-	 * @private
-	 *
-	 * @param	{number}	count
-	 */
-	List.prototype.setBigKeyCount = function(count) {
-		var counter = this.element.querySelector('.big');
-		counter.querySelector('.got').innerHTML = count.toString();
-		if (count < this.getCurrentArea().getBigKeyTotal()) {
-			counter.classList.remove('complete');
-		} else {
-			counter.classList.add('complete');
-		}
-	};
-
-	/**
-	 * Set key total
-	 *
-	 * @private
-	 *
-	 * @param	{number}	total
-	 * @param	{string}	keyType	'small' or 'big'
-	 */
-	List.prototype.setKeyTotal = function(total, keyType) {
-		this.element.querySelector('.'+ keyType +' .total').innerHTML = total.toString();
 	};
 
 	return List;
