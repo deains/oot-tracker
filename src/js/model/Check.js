@@ -8,14 +8,16 @@ define([
 	 * @param	{string}		name
 	 * @param	{string}		type
 	 * @param	{string}		location
+	 * @param	{number}		count
 	 * @param	{Array<string>}	[requires]
 	 *
 	 * @constructor
 	 */
-	function Check(store, name, type, location, requires) {
+	function Check(store, name, type, location, count, requires) {
 		this.name = name;
 		this.type = type;
 		this.location = location;
+		this.count = count;
 		this.requires = requires || [];
 
 		Model.call(this, store);
@@ -58,6 +60,15 @@ define([
 	 */
 	Check.prototype.getLocation = function() {
 		return this.location;
+	};
+
+	/**
+	 * Return how many items can be found on this check
+	 *
+	 * @returns	{number}
+	 */
+	Check.prototype.getCount = function() {
+		return this.count;
 	};
 
 	/**
@@ -132,6 +143,11 @@ define([
 		element.classList.add('check');
 		element.id = this.getID().toString();
 		element.innerHTML = this.getName();
+
+		if (this.getCount() > 1) {
+			element.innerHTML += '<span class="count">'+ this.getCount() +'</span>';
+		}
+
 		element.classList.add(this.getType());
 
 		return element;

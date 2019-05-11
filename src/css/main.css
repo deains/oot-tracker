@@ -497,6 +497,17 @@ body.dark {
 	width: 20px;
 }
 
+.list > .checks > li > .count {
+	font-weight: 500;
+}
+
+.list > .checks > li > .count::before {
+	content: " (x";
+}
+.list > .checks > li > .count::after {
+	content: ")";
+}
+
 .list > .checks > .barren {
 	color: gray;
 	font-style: italic;

@@ -164,6 +164,7 @@ define([
 	 * @param	{string}		data.name
 	 * @param	{string}		data.type
 	 * @param	{string}		data.location
+	 * @param	{number}		data.count
 	 * @param	{Array<string>}	[data.requires]
 	 *
 	 * @private
@@ -176,6 +177,7 @@ define([
 			data.name,
 			data.type,
 			data.location,
+			data.count,
 			data.requires
 		);
 
@@ -270,7 +272,9 @@ define([
 				check.meetsRequirements(this.app.getSettings()) &&
 				!(check.hasState('checked') || check.hasState('barren'))
 			);
-		}, this).length;
+		}, this).reduce(function(accumulator, check) {
+			return accumulator + check.getCount();
+		}, 0);
 
 		area.setCompletionCount(count);
 	};
