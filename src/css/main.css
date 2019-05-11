@@ -453,6 +453,11 @@ body.dark {
 	text-decoration: line-through;
 }
 
+.list > .checks > .barren::before,
+.list > .checks > .checked::before {
+	opacity: 0.5;
+}
+
 /* Check icons */
 
 .Bean::before { background-image: url(../img/checks/Bean.png) }
