@@ -130,6 +130,8 @@ define([
 			area.toggleState('barren');
 			var isBarren = area.hasState('barren');
 			area.getChecks().forEach(function(check) {
+				if (check.getType() === 'GossipStone') return;
+
 				if (isBarren) {
 					check.addState('barren');
 				} else {
