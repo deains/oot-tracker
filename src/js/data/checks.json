@@ -76,7 +76,7 @@
 	{"name": "Underwater bottle",								"type": "BottleLetter",		"location": "Lake Hylia",				"requires": {}},
 	{"name": "Diving in the Lab",								"type": "NPC",				"location": "Lake Hylia",				"requires": {}},
 	{"name": "Lab rooftop freestanding PoH",					"type": "HeartPiece",		"location": "Lake Hylia",				"requires": {}},
-	{"name": "Lake Hylia sun",									"type": "HeartPiece",		"location": "Lake Hylia",				"requires": {}},
+	{"name": "Lake Hylia sun",									"type": "FireArrow",		"location": "Lake Hylia",				"requires": {}},
 	{"name": "Talon's chickens minigame",						"type": "NPC",				"location": "Lon Lon Ranch",			"requires": {}},
 	{"name": "Song from Malon",									"type": "Song",				"location": "Lon Lon Ranch",			"requires": {}},
 	{"name": "Lon Lon silo freestanding PoH",					"type": "HeartPiece",		"location": "Lon Lon Ranch",			"requires": {}},
