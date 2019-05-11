@@ -11,13 +11,13 @@
 			{
 				"areaName": "Death Mountain Crater",
 				"nodeClass": "dmc",
-				"coords": [20, 4],
+				"coords": [21, 4],
 				"labelClass": "pos-e long"
 			},
 			{
 				"areaName": "Death Mountain Trail",
 				"nodeClass": "dmt",
-				"coords": [17, 5],
+				"coords": [18, 5],
 				"labelClass": "pos-s"
 			},
 			{
@@ -29,19 +29,19 @@
 			{
 				"areaName": "Desert Colossus",
 				"nodeClass": "dc",
-				"coords": [2, 7],
+				"coords": [2, 6],
 				"labelClass": "pos-e"
 			},
 			{
 				"areaName": "Dodongo's Cavern",
 				"nodeClass": "dodongo",
-				"coords": [16, 3],
+				"coords": [17, 3],
 				"labelClass": "pos-n"
 			},
 			{
 				"areaName": "Fire Temple",
 				"nodeClass": "fire",
-				"coords": [20, 2],
+				"coords": [21, 2],
 				"labelClass": "pos-e"
 			},
 			{
@@ -77,13 +77,13 @@
 			{
 				"areaName": "Goron City",
 				"nodeClass": "goron",
-				"coords": [20, 6],
+				"coords": [21, 6],
 				"labelClass": "pos-e"
 			},
 			{
 				"areaName": "Graveyard",
 				"nodeClass": "gy",
-				"coords": [17, 8],
+				"coords": [17, 9],
 				"labelClass": "pos-n"
 			},
 			{
@@ -131,7 +131,7 @@
 			{
 				"areaName": "Lake Hylia",
 				"nodeClass": "lake",
-				"coords": [9, 13],
+				"coords": [9, 12],
 				"labelClass": "pos-w"
 			},
 			{
@@ -167,13 +167,13 @@
 			{
 				"areaName": "Shadow Temple",
 				"nodeClass": "shadow",
-				"coords": [20, 8],
+				"coords": [19, 9],
 				"labelClass": "pos-n"
 			},
 			{
 				"areaName": "Spirit Temple",
 				"nodeClass": "spirit",
-				"coords": [2, 5],
+				"coords": [2, 4],
 				"labelClass": "pos-n"
 			},
 			{
@@ -185,7 +185,7 @@
 			{
 				"areaName": "Water Temple",
 				"nodeClass": "water",
-				"coords": [9, 15],
+				"coords": [9, 14],
 				"labelClass": "pos-w"
 			},
 			{
@@ -197,7 +197,7 @@
 			{
 				"areaName": "Zora's Fountain",
 				"nodeClass": "zf",
-				"coords": [23, 10],
+				"coords": [22, 10],
 				"labelClass": "pos-nw"
 			},
 			{
@@ -249,13 +249,8 @@
 					{
 						"id": "hf2lh",
 						"class": "curve-top-left",
-						"coords": [[18, 18], [22, 26]],
+						"coords": [[18, 18], [22, 28]],
 						"extra": {"marginTop": "2px"}
-					},
-					{
-						"id": "lh2water",
-						"class": "vertical",
-						"coords": [[17, 26], [19, 30]]
 					}
 				]
 			},
@@ -283,22 +278,12 @@
 					{
 						"id": "hf2kak",
 						"class": "horizontal",
-						"coords": [[22, 17], [30, 19]]
-					},
-					{
-						"id": "kak2gy",
-						"class": "curve-bottom-right tight",
-						"coords": [[30, 16], [34, 18]]
+						"coords": [[22, 17], [38, 19]]
 					},
 					{
 						"id": "kak2botw",
 						"class": "vertical",
 						"coords": [[29, 18], [31, 20]]
-					},
-					{
-						"id": "gy2shdw",
-						"class": "horizontal",
-						"coords": [[34, 15], [40, 17]]
 					}
 				]
 			},
@@ -309,32 +294,32 @@
 					{
 						"id": "kak2dmt",
 						"class": "curve-top-left",
-						"coords": [[30, 10], [34, 18]]
+						"coords": [[30, 10], [36, 18]]
 					},
 					{
 						"id": "dmt2dongo",
 						"class": "curve-top-right",
-						"coords": [[32, 6], [34, 10]]
+						"coords": [[34, 6], [36, 10]]
 					},
 					{
 						"id": "dmt2dmc",
 						"class": "curve-bottom-right tight",
-						"coords": [[34, 8], [40, 10]]
+						"coords": [[36, 8], [42, 10]]
 					},
 					{
 						"id": "dmt2goron",
 						"class": "curve-top-right tight",
-						"coords": [[34, 10], [40, 12]]
+						"coords": [[36, 10], [42, 12]]
 					},
 					{
 						"id": "goron2dmc",
 						"class": "vertical",
-						"coords": [[39, 8], [41, 12]]
+						"coords": [[41, 8], [43, 12]]
 					},
 					{
 						"id": "dmc2fire",
 						"class": "vertical",
-						"coords": [[39, 4], [41, 8]]
+						"coords": [[41, 4], [43, 8]]
 					}
 				]
 			},
@@ -388,17 +373,17 @@
 					{
 						"id": "zd2zf",
 						"class": "curve-top-left",
-						"coords": [[40, 20], [46, 22]]
+						"coords": [[40, 20], [44, 22]]
 					},
 					{
 						"id": "zf2ice",
 						"class": "curve-top-left tight",
-						"coords": [[46, 18], [48, 20]]
+						"coords": [[44, 18], [48, 20]]
 					},
 					{
 						"id": "zf2jabu",
 						"class": "curve-bottom-left tight",
-						"coords": [[46, 20], [48, 22]]
+						"coords": [[44, 20], [48, 22]]
 					}
 				]
 			},
@@ -419,7 +404,7 @@
 					{
 						"id": "hw2spi",
 						"class": "curve-bottom-left",
-						"coords": [[4, 10], [6, 18]]
+						"coords": [[4, 8], [6, 18]]
 					}
 				]
 			}
