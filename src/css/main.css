@@ -233,6 +233,7 @@ body.dark {
 }
 
 .area.complete > .label {
+	color: #6c6e75;
 	text-decoration: line-through;
 }
 
@@ -517,6 +518,7 @@ body.dark {
 .Chest::before { background-image: url(../img/checks/Chest.png) }
 .Cow::before { background-image: url(../img/checks/Cow.png) }
 .Dampe::before { background-image: url(../img/checks/Dampe.png) }
+.FireArrow::before { background-image: url(../img/checks/FireArrow.png) }
 .Frog::before { background-image: url(../img/checks/Frog.png) }
 .GerudoCard::before { background-image: url(../img/checks/GerudoCard.png) }
 .GossipStone::before { background-image: url(../img/checks/GossipStone.png) }
