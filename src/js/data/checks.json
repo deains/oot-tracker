@@ -101,6 +101,7 @@
 	{"name": "Fairy Fountain reward",							"type": "GreatFairy",		"location": "Zora's Fountain",			"count": 1,		"requires": {}},
 	{"name": "Iceberg freestanding PoH",						"type": "HeartPiece",		"location": "Zora's Fountain",			"count": 1,		"requires": {}},
 	{"name": "Underwater freestanding PoH",						"type": "HeartPiece",		"location": "Zora's Fountain",			"count": 1,		"requires": {}},
+	{"name": "Buy Magic Beans",									"type": "Bean",				"location": "Zora's River",				"count": 1,		"requires": {}},
 	{"name": "Lower freestanding PoH",							"type": "HeartPiece",		"location": "Zora's River",				"count": 1,		"requires": {}},
 	{"name": "Open grotto on cliff plateau",					"type": "Chest",			"location": "Zora's River",				"count": 1,		"requires": {}},
 	{"name": "Upper freestanding PoH",							"type": "HeartPiece",		"location": "Zora's River",				"count": 1,		"requires": {}},
