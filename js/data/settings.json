@@ -1,109 +1,133 @@
 {
 	"darkmode": {
-		"showInMenu": true,
+		"showInMenu": "settings",
 		"title": "Dark mode",
 		"change": ["StyleChange"],
 		"default": false
 	},
+	"dungeon_prizes": {
+		"showInMenu": "settings",
+		"title": "Dungeon prizes",
+		"change": ["Reload"],
+		"default": false
+	},
 	"shopsanity": {
-		"showInMenu": true,
+		"showInMenu": "settings",
 		"title": "Shopsanity",
 		"change": ["Reload"],
 		"default": false
 	},
+	"expensive_merchants": {
+		"showInMenu": "settings",
+		"title": "Expensive merchants",
+		"change": ["Reload"],
+		"default": false
+	},
 	"scrubsanity": {
-		"showInMenu": true,
+		"showInMenu": "settings",
 		"title": "Scrubsanity",
 		"change": ["Reload"],
 		"default": false
 	},
 	"cowsanity": {
-		"showInMenu": true,
+		"showInMenu": "settings",
 		"title": "Cowsanity",
 		"change": ["Reload"],
 		"default": false
 	},
 	"gstoken": {
-		"showInMenu": true,
+		"showInMenu": "settings",
 		"title": "Skulltula tokens",
 		"change": ["Reload"],
 		"default": true
 	},
 	"count.gstoken": {
-		"showInMenu": true,
+		"showInMenu": "settings",
 		"title": "Count skulltula tokens",
 		"change": ["Reload"],
 		"default": false
 	},
 	"gossipstone": {
-		"showInMenu": true,
+		"showInMenu": "settings",
 		"title": "Gossip stones",
 		"change": ["Reload"],
 		"default": true
 	},
 	"count.gossipstone": {
-		"showInMenu": true,
+		"showInMenu": "settings",
 		"title": "Count gossip stones",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.deku": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Deku Tree",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.dodongo": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Dodongo's Cavern",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.jabu": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Jabu Jabu's Belly",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.forest": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Forest Temple",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.fire": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Fire Temple",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.water": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Water Temple",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.spirit": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Spirit Temple",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.shadow": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Shadow Temple",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.botw": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Bottom of the Well",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.ice": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Ice Cavern",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.gtg": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Gerudo Training Ground",
 		"change": ["Reload"],
 		"default": false
 	},
 	"mq.gc": {
-		"showInMenu": false,
+		"showInMenu": "mq",
+		"title": "Ganon's Castle",
 		"change": ["Reload"],
 		"default": false
 	}

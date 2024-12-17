@@ -59,8 +59,8 @@
 		"type": "overworld",
 		"label": "s"
 	},
-	"Gerudo Training Grounds": {
-		"name": "Gerudo Training Grounds",
+	"Gerudo Training Ground": {
+		"name": "Gerudo Training Ground",
 		"class": "gtg",
 		"type": "dungeon",
 		"label": "e long"
