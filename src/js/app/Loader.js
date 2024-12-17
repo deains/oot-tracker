@@ -132,7 +132,7 @@ define([
 					check.removeState('barren');
 				}
 			});
-			this.updateAreaCount(area);
+			this.updateAreaCount(area, true);
 			event.preventDefault();
 		}.bind(this));
 
@@ -142,10 +142,10 @@ define([
 
 		this.app.getEvents().add('Reset', function() {
 			area.reset();
-			this.updateAreaCount(area);
+			this.updateAreaCount(area, true);
 		}.bind(this));
 		this.app.getEvents().add('Reload', function() {
-			this.updateAreaCount(area);
+			this.updateAreaCount(area, true);
 		}.bind(this));
 
 		return area;
@@ -178,13 +178,13 @@ define([
 		check.getElement().addEventListener('click', function(event) {
 			if (event.button === 0) {
 				check.toggleState('checked');
-				this.updateAreaCount(check.getArea());
+				this.updateAreaCount(check.getArea(), true);
 			}
 		}.bind(this));
 
 		check.getElement().addEventListener('contextmenu', function(event) {
 			check.toggleState('barren');
-			this.updateAreaCount(check.getArea());
+			this.updateAreaCount(check.getArea(), true);
 			event.preventDefault();
 		}.bind(this));
 
@@ -257,9 +257,10 @@ define([
 	 *
 	 * @private
 	 *
-	 * @param	{Area}	area
+	 * @param	{Area}		area
+	 * @param	{boolean}	updateTotal
 	 */
-	Loader.prototype.updateAreaCount = function(area, updateTotal = true) {
+	Loader.prototype.updateAreaCount = function(area, updateTotal) {
 		var count = area.getChecks().filter(function(check) {
 			return (
 				this.getCountExclusions().indexOf(check.getType()) === -1 &&

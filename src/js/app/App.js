@@ -110,7 +110,7 @@ define([
 			total += area.total;
 		});
 
-		this.totalElement.innerText = `${count} / ${total}`;
+		this.totalElement.innerText = count + ' / ' + total;
 	};
 
 	/**
