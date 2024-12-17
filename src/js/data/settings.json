@@ -29,6 +29,12 @@
 		"change": ["Reload"],
 		"default": false
 	},
+	"beesanity": {
+		"showInMenu": "settings",
+		"title": "Beehive shuffle",
+		"change": ["Reload"],
+		"default": false
+	},
 	"cowsanity": {
 		"showInMenu": "settings",
 		"title": "Cowsanity",
