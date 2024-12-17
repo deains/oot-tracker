@@ -5,9 +5,21 @@
 		"change": ["StyleChange"],
 		"default": false
 	},
+	"dungeon_prizes": {
+		"showInMenu": "settings",
+		"title": "Dungeon prizes",
+		"change": ["Reload"],
+		"default": false
+	},
 	"shopsanity": {
 		"showInMenu": "settings",
 		"title": "Shopsanity",
+		"change": ["Reload"],
+		"default": false
+	},
+	"expensive_merchants": {
+		"showInMenu": "settings",
+		"title": "Expensive merchants",
 		"change": ["Reload"],
 		"default": false
 	},
