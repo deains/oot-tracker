@@ -432,7 +432,7 @@
 	{"name": "Storms grotto near warp pad",						"type": "Scrub",			"location": "Sacred Forest Meadow",		"count": 2,		"requires": {"scrubsanity": true}},
 	{"name": "Stone circle grotto",								"type": "Scrub",			"location": "Zora's River",				"count": 2,		"requires": {"scrubsanity": true}},
 	{"name": "DT MQ Deku Scrub Deku Shield",					"type": "Scrub",			"location": "Deku Tree",				"count": 1,		"requires": {"scrubsanity": true, "mq.deku": true}},
-	{"name": "Bombable wall near entrance",						"type": "Scrub",			"location": "Dodongo's Cavern",			"count": 1,		"requires": {"scrubsanity": true}},
+	{"name": "Lobby alcove",									"type": "Scrub",			"location": "Dodongo's Cavern",			"count": 1,		"requires": {"scrubsanity": true}},
 	{"name": "Side room near torches/Dodongos",					"type": "Scrub",			"location": "Dodongo's Cavern",			"count": 1,		"requires": {"scrubsanity": true}},
 	{"name": "Side room near Bomb chest",						"type": "Scrub",			"location": "Dodongo's Cavern",			"count": 2,		"requires": {"scrubsanity": true}},
 	{"name": "DC MQ Deku Scrub Deku Sticks",					"type": "Scrub",			"location": "Dodongo's Cavern",			"count": 1,		"requires": {"scrubsanity": true, "mq.dodongo": true}},
