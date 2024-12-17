@@ -63,7 +63,7 @@
 				"labelClass": "pos-s"
 			},
 			{
-				"areaName": "Gerudo Training Grounds",
+				"areaName": "Gerudo Training Ground",
 				"nodeClass": "gtg",
 				"coords": [5, 7],
 				"labelClass": "pos-e long"
