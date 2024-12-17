@@ -82,8 +82,12 @@ define([
 	 * Set the number of uncompleted checks in this area
 	 *
 	 * @param	{number}	count
+	 * @param	{number}	total
 	 */
-	Area.prototype.setCompletionCount = function(count) {
+	Area.prototype.setCompletionCount = function(count, total) {
+		this.count = count;
+		this.total = total;
+
 		this.getElement().querySelector('.checks').innerHTML = count.toString();
 
 		if (count === 0) {

@@ -6,6 +6,7 @@ define([
 		config,
 		document.getElementById('places'),
 		document.getElementById('list'),
+		document.getElementById('total'),
 		window.localStorage
 	);
 

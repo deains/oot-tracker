@@ -466,6 +466,19 @@ body.dark {
 	opacity: 0.5;
 }
 
+/* Total count */
+
+.total {
+	border: 2px solid #17429d;
+	border-radius: 10px;
+	color: #17429d;
+	line-height: 1;
+	font-weight: 500;
+	margin-right: 4px;
+	padding: 4px 6px;
+	pointer-events: none;
+}
+
 /* Check icons */
 
 .Anju::before { background-image: url(../img/checks/Anju.png) }

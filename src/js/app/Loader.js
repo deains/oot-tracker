@@ -114,7 +114,7 @@ define([
 			checks
 		);
 
-		this.updateAreaCount(area);
+		this.updateAreaCount(area, false);
 
 		area.getElement().addEventListener('click', function() {
 			this.app.getList().changeArea(area);
@@ -259,7 +259,7 @@ define([
 	 *
 	 * @param	{Area}	area
 	 */
-	Loader.prototype.updateAreaCount = function(area) {
+	Loader.prototype.updateAreaCount = function(area, updateTotal = true) {
 		var count = area.getChecks().filter(function(check) {
 			return (
 				this.getCountExclusions().indexOf(check.getType()) === -1 &&
@@ -269,8 +269,17 @@ define([
 		}, this).reduce(function(accumulator, check) {
 			return accumulator + check.getCount();
 		}, 0);
+		var total = area.getChecks().filter(function(check) {
+			return (
+				this.getCountExclusions().indexOf(check.getType()) === -1 &&
+				check.meetsRequirements(this.app.getSettings())
+			);
+		}, this).reduce(function(accumulator, check) {
+			return accumulator + check.getCount();
+		}, 0);
 
-		area.setCompletionCount(count);
+		area.setCompletionCount(count, total);
+		updateTotal && this.app.updateTotalCount();
 	};
 
 	/**

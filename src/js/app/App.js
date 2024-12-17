@@ -15,12 +15,14 @@ define([
 	 * @param	{string}		config.startingArea		Which area to load initially
 	 * @param	{HTMLElement}	placesElement			Element containing the area list
 	 * @param	{HTMLElement}	listElement				Element containing the current area list
+	 * @param	{HTMLElement}	totalElement			Element containing the total counter
 	 * @param	{Storage}		storage					Storage for importing/exporting state data
 	 *
 	 * @constructor
 	 */
-	function App(config, placesElement, listElement, storage) {
+	function App(config, placesElement, listElement, totalElement, storage) {
 		this.startingArea = config.startingArea;
+		this.totalElement = totalElement;
 
 		this.events = new Events();
 		this.store = new Store(this, storage, config.storageKey);
@@ -29,6 +31,7 @@ define([
 		this.places = new Places(this, placesElement, config.layout);
 		this.list = new List(this, listElement);
 
+		this.updateTotalCount();
 		this.loadStartingArea();
 	}
 
@@ -93,6 +96,21 @@ define([
 	 */
 	App.prototype.getStore = function() {
 		return this.store;
+	};
+
+	/**
+	 * Update total count
+	 */
+	App.prototype.updateTotalCount = function() {
+		var count = 0;
+		var total = 0;
+
+		this.loader.getAllAreas().forEach(function(area) {
+			count += area.count;
+			total += area.total;
+		});
+
+		this.totalElement.innerText = `${count} / ${total}`;
 	};
 
 	/**
