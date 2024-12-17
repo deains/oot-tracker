@@ -1,5 +1,7 @@
 # OoT location tracker
 
+![](https://repository-images.githubusercontent.com/178893729/3ee7c659-248a-4531-bd14-03ff600ed3b6)
+
 ### What is this?
 
 It's a small web app to keep track of which locations you've visted in Legend of Zelda: Ocarina of Time. It's designed to help you whilst playing the [OoT Randomizer](https://ootrandomizer.com/).
