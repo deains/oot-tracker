@@ -84,6 +84,14 @@ body.dark {
 	background-color: #483d8b;
 }
 
+.controls > .open-mq {
+	background-color: #d58137;
+}
+
+.controls > .open-mq:hover {
+	background-color: #8a5713;
+}
+
 .controls > .open-about {
 	background-color: #3cb371;
 }
@@ -117,7 +125,7 @@ body.dark {
 .settings {
 	left: 64px;
 	text-align: center;
-	width: 300px;
+	width: 320px;
 }
 
 .settings ul {

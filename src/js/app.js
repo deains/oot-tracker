@@ -22,7 +22,7 @@ define([
 	});
 	app.getEvents().trigger('StyleChange');
 
-	['settings', 'about'].forEach(function(id) {
+	['settings', 'mq', 'about'].forEach(function(id) {
 		var el = document.getElementById(id);
 		var opener = document.getElementById('open-'+ id);
 		document.addEventListener('click', function(event) {
@@ -49,13 +49,15 @@ define([
 	});
 
 	(function() {
-		var ul = document.getElementById('settings').querySelector('ul');
+		var settingsUL = document.getElementById('settings').querySelector('ul');
+		var mqUL = document.getElementById('mq').querySelector('ul');
 		var tpl = document.getElementById('settings').querySelector('.template');
 		tpl.classList.remove('template');
 		tpl.remove();
 
 		app.getSettings().all().forEach(function(setting) {
 			if (setting.showInMenu) {
+				var menu = setting.showInMenu === 'settings' ? settingsUL : mqUL;
 				var li = tpl.cloneNode(true);
 
 				li.querySelector('.title').innerHTML = setting.title;
@@ -71,7 +73,7 @@ define([
 					});
 				});
 
-				ul.appendChild(li);
+				menu.appendChild(li);
 			}
 		});
 	})();
