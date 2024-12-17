@@ -64,7 +64,8 @@ define([
 		nodes.forEach(function(node) {
 			var areaElement = this.app.getLoader().getAreaByName(node.areaName).getElement();
 
-			areaElement.className = 'area '+ node.nodeClass;
+			areaElement.classList.add(node.nodeClass);
+			areaElement.classList.remove('active');
 			areaElement.style.gridArea = node.coords[1] +' / '+ node.coords[0];
 
 			var labelElement = areaElement.querySelector('.label');
