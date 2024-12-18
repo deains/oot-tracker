@@ -106,7 +106,7 @@ define([
 		var total = 0;
 
 		this.loader.getAllAreas().forEach(function(area) {
-			count += area.count;
+			count += area.total - area.count;
 			total += area.total;
 		});
 
