@@ -68,6 +68,10 @@ body.dark {
 	z-index: 2;
 }
 
+.dark .controls > button {
+	color: #dcddde;
+}
+
 .controls > .reset {
 	background-color: #cd5c5c;
 }
@@ -237,7 +241,7 @@ body.dark {
 }
 
 .dark .area > .label {
-	color: #709cef;
+	color: #78a7ff;
 }
 
 .area.complete > .label {
@@ -400,6 +404,10 @@ body.dark {
 	flex: 0 0 300px;
 }
 
+.dark .list {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.webp");
+}
+
 .list > .header > .title {
 	color: white;
 	font-size: 24px;
@@ -407,6 +415,10 @@ body.dark {
 	line-height: 40px;
 	text-align: center;
 	text-shadow: 0 0 3px black;
+}
+
+.dark .list > .header > .title {
+	color: #e6e6e6;
 }
 
 .list > .checks {
@@ -428,6 +440,10 @@ body.dark {
 	padding: 8px 8px 8px 32px;
 	position: relative;
 	transition: color, font-style, text-decoration 0.2s;
+}
+
+.dark .list > .checks > li {
+	background-color: rgba(255, 255, 255, 0.6);
 }
 
 .list > .checks > li::before {
@@ -477,6 +493,12 @@ body.dark {
 	margin-right: 4px;
 	padding: 4px 6px;
 	pointer-events: none;
+}
+
+.dark .total {
+	background-color: #44485b;
+	border-color: #0d1421;
+	color: #dcddde;
 }
 
 /* Check icons */
