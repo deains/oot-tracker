@@ -291,7 +291,7 @@ define([
 	 * @returns	{string[]}
 	 */
 	Loader.prototype.getCountExclusions = function() {
-		var excluded = [];
+		var excluded = ['KeatonTrade', 'SkullTrade', 'SpookyTrade', 'BunnyTrade'];
 		if (!this.app.getSettings().get('count.gstoken')) {
 			excluded.push('GSToken');
 		}

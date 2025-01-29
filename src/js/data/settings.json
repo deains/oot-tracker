@@ -11,6 +11,18 @@
 		"change": ["Reload"],
 		"default": false
 	},
+	"child_trade": {
+		"showInMenu": "settings",
+		"title": "Child trade quest",
+		"change": ["Reload"],
+		"default": false
+	},
+	"adult_trade": {
+		"showInMenu": "settings",
+		"title": "Adult trade quest",
+		"change": ["Reload"],
+		"default": false
+	},
 	"shopsanity": {
 		"showInMenu": "settings",
 		"title": "Shopsanity",
